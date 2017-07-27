@@ -4,5 +4,6 @@ body, html {
 }
 
 body {
+	background: #000;
 	background: linear-gradient(0deg, #121B4B, #6B67B9, #C298D5, #ECBBDC, #FED1C4);
 }

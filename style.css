@@ -4,6 +4,15 @@ body, html {
 }
 
 body {
-	background: #000;
-	background: linear-gradient(0deg, #121B4B, #6B67B9, #C298D5, #ECBBDC, #FED1C4);
+	background-color: #000;
 }
+
+#sky {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(to bottom, #97AEC0 0%, #E9EFEB 50%, #F0F0D8 70%, #F1DCA3 90%, #D9AA62 100%);
+}
+

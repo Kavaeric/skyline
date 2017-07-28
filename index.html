@@ -5,12 +5,24 @@
 	<title>Trouble Sleeping</title>
 
 	<link rel="stylesheet" href="style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
 <body>
-	<div id="sky">
-		
+	<div id="sky"></div>
+
+	<div class="arco_layer" id="arco_layer_0">
+		<div class="arco" id="arco_0_0"></div>
+		<div class="arco" id="arco_0_1"></div>
 	</div>
+
+	<script type="text/javascript">
+		$(document).mousemove(function(event){
+			$("#arco_layer_0").css('left', event.pageX / 7);
+		});
+	</script>
+	
 </body>
 
 </html>

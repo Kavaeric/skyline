@@ -5,6 +5,7 @@ body, html {
 
 body {
 	background-color: #000;
+	overflow: hidden;
 }
 
 #sky {
@@ -16,3 +17,35 @@ body {
 	background: linear-gradient(to bottom, #97AEC0 0%, #E9EFEB 50%, #F0F0D8 70%, #F1DCA3 90%, #D9AA62 100%);
 }
 
+.arco_layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.arco {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 50%;
+
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#arco_0_0 {
+	margin-left: -15%;
+	background-image: url("arco_0_0.png");
+}
+
+#arco_0_1 {
+	margin-left: 50%;
+	background-image: url("arco_0_1.png");
+}

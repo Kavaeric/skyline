@@ -16,9 +16,9 @@ body {
 	width: 100%;
 	background: linear-gradient(to bottom,
 								#6D82A6 0%,
-								#D2DCDC 50%,
-								#F0F0D8 70%,
-								#F1D382 90%,
+								#D2DCDC 70%,
+								#F0F0D8 80%,
+								#F1D382 95%,
 								#E1A13F 100%);
 }
 
@@ -85,7 +85,7 @@ body {
 
 #arco_layer_2 {
 	z-index: 10;
-	opacity: 0.5;
+	opacity: 1;
 }
 
 #arco_2_0 {
@@ -126,8 +126,13 @@ body {
 	mix-blend-mode: screen;
 }
 
+@keyframes cars {
+	from {transform: translateX(0);}
+	to   {transform: translateX(110vw);}
+}
+
 #cars_0 {
-	margin-top: 74vh;
+	margin-top: 70vh;
 	z-index: 25;
 	background-image: url("cars_0.png");
 
@@ -135,11 +140,19 @@ body {
 }
 
 #cars_1 {
-	margin-top: 80vh;
+	margin-top: 65vh;
 	z-index: 12;
 	background-image: url("cars_1.png");
 
 	animation: cars 25s linear 0s infinite;
+}
+
+#cars_2 {
+	margin-top: 29vh;
+	z-index: 5;
+	background-image: url("cars_2.png");
+
+	animation: cars 40s linear 0s infinite reverse;
 }
 
 #cars_2 {
@@ -150,7 +163,53 @@ body {
 	animation: cars 40s linear 0s infinite reverse;
 }
 
-@keyframes cars {
-	from {transform: translateX(0);}
-	to   {transform: translateX(110vw);}
+@keyframes plane {
+	0% 		  {transform: translate(0, 0) rotate(7deg);}
+	60%, 100% {transform: translate(-700vw, -80vh) rotate(7deg);}
+}
+
+#plane {
+	position: absolute;
+	height: 2vh;
+	width: 2vw;
+	top: 50vh;
+	left: 150vw;
+
+	z-index: 1;
+	background-image: url("aeroplane.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	mix-blend-mode: multiply;
+
+	animation: plane 70s linear 0s infinite;
+}
+
+@keyframes credit {
+	from {transform: rotateX(0)
+					 rotateY(15deg)
+					 rotateZ(-3deg);
+		  opacity: 0;}
+	to   {transform: rotateX(0)
+					 rotateY(10deg)
+					 rotateZ(-1deg);
+		  opacity: .8;}
+}
+
+#credit {
+	position: absolute;
+	bottom: 3em;
+	left: 3em;
+	width: 25vw;
+
+	padding: .5em 1em;
+
+	z-index: 99;
+	background-color: rgba(0, 0, 0, .6);
+
+	font-size: 2em;
+	font-family: Roboto, sans-serif;
+	color: #fff;
+
+	animation: credit 1.5s ease-out 12s;
+	animation-fill-mode: both;
 }

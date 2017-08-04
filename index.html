@@ -6,8 +6,19 @@
 
 	<link rel="stylesheet" href="style.css">
 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 </head>
+
+<audio autoplay loop>
+  <source src="goodmorning.ogg" type="audio/ogg">
+</audio>
+
+<audio autoplay loop>
+  <source src="aeroplane.ogg" type="audio/ogg">
+</audio>
+
 
 <body>
 	<div id="sky"></div>
@@ -37,6 +48,10 @@
 		<div class="arco" id="arco_2_4"></div>
 	</div>
 
+	<div id="plane"></div>
+
+	<div id="credit">GROUPLOVE - GOOD MORNING</div>
+
 
 	<script type="text/javascript">
 		$(document).mousemove(function(event){
@@ -46,8 +61,14 @@
 			$("#arco_layer_0").css('left', (event.pageX - ($(window).width() * 0.5)) * 0.10);
 			$("#arco_layer_0").css('top', (event.pageY - ($(window).height())) * 0.07);
 
+			$("#cars_1").css('left', (event.pageX - ($(window).width() * 0.5)) * 0.08);
+			$("#cars_1").css('top', (event.pageY - ($(window).height())) * 0.05);
+
 			$("#arco_layer_1").css('left',(event.pageX - ($(window).width() * 0.5)) * 0.05);
 			$("#arco_layer_1").css('top', (event.pageY - ($(window).height())) * 0.03);
+
+			$("#cars_2").css('left', (event.pageX - ($(window).width() * 0.5)) * 0.03);
+			$("#cars_2").css('top', (event.pageY - ($(window).height())) * 0.02);
 
 			$("#arco_layer_2").css('left',(event.pageX - ($(window).width() * 0.5)) * 0.02);
 			$("#arco_layer_2").css('top', (event.pageY - ($(window).height())) * 0.01);
